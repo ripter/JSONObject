@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONObject", "JSONObject\JSONObject.csproj", "{7BCAB9DD-BACD-44A1-AE2C-C6AA6F5FF72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console Test", "Console Test\Console Test.csproj", "{45777D44-E8C4-4F92-99B1-D2AC57878516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{9A9BA1A4-C7F3-4822-8178-6DE339D7148F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BCAB9DD-BACD-44A1-AE2C-C6AA6F5FF72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCAB9DD-BACD-44A1-AE2C-C6AA6F5FF72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCAB9DD-BACD-44A1-AE2C-C6AA6F5FF72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCAB9DD-BACD-44A1-AE2C-C6AA6F5FF72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45777D44-E8C4-4F92-99B1-D2AC57878516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45777D44-E8C4-4F92-99B1-D2AC57878516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45777D44-E8C4-4F92-99B1-D2AC57878516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45777D44-E8C4-4F92-99B1-D2AC57878516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9BA1A4-C7F3-4822-8178-6DE339D7148F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9BA1A4-C7F3-4822-8178-6DE339D7148F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9BA1A4-C7F3-4822-8178-6DE339D7148F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9BA1A4-C7F3-4822-8178-6DE339D7148F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

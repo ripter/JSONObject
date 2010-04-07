@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Debug\Test.dll" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-04-05" time="11:31:33">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.3603" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.2\bin\net-2.0" machine-name="FRANKGRIMES" user="Administrator" user-domain="FRANKGRIMES" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Debug\Test.dll" executed="True" success="True" time="0.219" asserts="0">
+    <results>
+      <test-suite name="Test" executed="True" success="True" time="0.203" asserts="0">
+        <results>
+          <test-suite name="JSONTests" executed="True" success="True" time="0.203" asserts="0">
+            <results>
+              <test-case name="Test.JSONTests.mergeTest" executed="True" success="True" time="0.203" asserts="7" />
+              <test-case name="Test.JSONTests.simpleTest" executed="True" success="True" time="0.000" asserts="9" />
+              <test-case name="Test.JSONTests.typeTest" executed="True" success="True" time="0.000" asserts="12" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

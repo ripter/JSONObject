@@ -1,0 +1,5 @@
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject\bin\Debug\JSONObject.dll
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject\bin\Debug\JSONObject.pdb
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject\obj\Debug\JSONObject.dll
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject\obj\Debug\JSONObject.pdb
