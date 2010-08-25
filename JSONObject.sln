@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONObject", "JSONObject\JSONObject.csproj", "{7BCAB9DD-BACD-44A1-AE2C-C6AA6F5FF72C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console Test", "Console Test\Console Test.csproj", "{45777D44-E8C4-4F92-99B1-D2AC57878516}"

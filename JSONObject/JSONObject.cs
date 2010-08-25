@@ -6,6 +6,10 @@ using System.Text;
 
 namespace org.zensoftware
 {
+    /// <summary>
+    /// An Object that can easily be turned into a JSON string and back.
+    /// </summary>
+    [Serializable()]
     public class JSONObject
     {
         protected Dictionary<string, object> _properties;
@@ -40,7 +44,7 @@ namespace org.zensoftware
             Dictionary<string, object> list = readObject(ref pos, ref json_text);
             add(list);
         }
-        
+
         /// <summary>
         /// This will add all of the properties to our own properties, overriding any existing ones.
         /// </summary>
@@ -125,6 +129,7 @@ namespace org.zensoftware
         /// <summary>
         /// Returns an int value for the key, or 0 if the key doens't exist.
         /// If the key exists and can not be converted, it will throw a FormatException error.
+        /// Reutns Int32
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
@@ -196,6 +201,70 @@ namespace org.zensoftware
             }
             return new List<object>();
         }
+        /// <summary>
+        /// Returns an List&lt;string&gt; value for the key, or and empty list if the key doens't exist.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public List<string> listOfStringsForKey(string key)
+        {
+            if (_properties.ContainsKey(key))
+            {
+                //Is it already the type we want?
+                if (_properties[key].GetType() == typeof(List<string>))
+                {
+                    return (List<string>)_properties[key];
+                }
+            }
+            return new List<string>();
+        }
+        /// <summary>
+        /// Returns an List&lt;JSONObject&gt; value for the key, or and empty list if the key doens't exist.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public List<JSONObject> listOfJSONObjectsForKey(string key)
+        {
+            if (_properties.ContainsKey(key))
+            {
+                //Is it already the type we want?
+                if (_properties[key].GetType() == typeof(List<JSONObject>))
+                {
+                    return (List<JSONObject>)_properties[key];
+                }
+            }
+            return new List<JSONObject>();
+        }
+        /// <summary>
+        /// Gets the value for the key, or null if it doesn't exist.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public object valueForKey(string key)
+        {
+            if (_properties.ContainsKey(key))
+            {
+                return _properties[key];
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Sets the Value for the key, overriding the old value if it exists.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public void setValueForKey(string key, object value)
+        {
+            if (_properties.ContainsKey(key))
+            {
+                _properties[key] = value;
+            }
+            else
+            {
+                _properties.Add(key, value);
+            }
+        }
 
 
         /// <summary>
@@ -207,6 +276,35 @@ namespace org.zensoftware
         static public JSONObject parseJSON(string json_text)
         {
             return new JSONObject(json_text);
+        }
+        /// <summary>
+        /// Reads a JSON array and returns the object list.
+        /// This expects all items inside the list to be JSON Objects, other types will be ignored.
+        /// </summary>
+        /// <param name="json_text"></param>
+        /// <returns></returns>
+        static public List<JSONObject> parseJSONObjectArray(string json_text)
+        {
+            //Make sure the string is formatted correctly
+            if (json_text.StartsWith("[") == false || json_text.EndsWith("]") == false) { throw new FormatException("JSON Arrays must start with [ and end with ]"); }
+
+            //Create a dummy object to do the reading
+            JSONObject dummy = new JSONObject();
+
+            int pos = 0;
+            List<object> list = dummy.readArray(ref pos, ref json_text);
+
+            //They should all be of type JSONObject
+            List<JSONObject> json_list = new List<JSONObject>();
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (typeof(JSONObject) == list[i].GetType())
+                {
+                    json_list.Add((JSONObject)list[i]);
+                }
+            }
+
+            return json_list;
         }
 
         /// <summary>
@@ -461,7 +559,7 @@ namespace org.zensoftware
                 object value = readValue(ref pos, ref json);
 
                 array.Add(value);
-                Console.WriteLine("Array Item:\t" + value);
+                //Console.WriteLine("Array Item:\t" + value);
             }
             //Arrays should consume the ending ]
             pos++;

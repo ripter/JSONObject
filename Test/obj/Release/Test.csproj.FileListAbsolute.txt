@@ -1,0 +1,9 @@
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Release\Test.dll
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Release\Test.pdb
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Release\JSONObject.dll
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Release\nunit.framework.dll
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Release\JSONObject.pdb
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Release\nunit.framework.xml
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\obj\Release\Test.dll
+C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\obj\Release\Test.pdb

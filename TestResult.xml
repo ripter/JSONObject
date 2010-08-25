@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject.sln" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-06-09" time="13:57:45">
+  <environment nunit-version="2.5.5.10112" clr-version="2.0.50727.3603" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject" machine-name="FRANKGRIMES" user="Administrator" user-domain="FRANKGRIMES" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject.sln" executed="True" result="Success" success="True" time="0.047" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\JSONObject\bin\Debug\JSONObject.dll" executed="False" result="NotRunnable">
+        <reason>
+          <message><![CDATA[Has no TestFixtures]]></message>
+        </reason>
+      </test-suite>
+      <test-suite type="Assembly" name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Console Test\bin\Debug\Console Test.exe" executed="False" result="NotRunnable">
+        <reason>
+          <message><![CDATA[Has no TestFixtures]]></message>
+        </reason>
+      </test-suite>
+      <test-suite type="Assembly" name="C:\Documents and Settings\Owner\My Documents\Visual Studio 2008\Projects\JSONObject\Test\bin\Debug\Test.dll" executed="True" result="Success" success="True" time="0.031" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="JSONTests" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                <results>
+                  <test-case name="Test.JSONTests.mergeTest" executed="True" result="Success" success="True" time="0.031" asserts="7" />
+                  <test-case name="Test.JSONTests.simpleTest" executed="True" result="Success" success="True" time="0.000" asserts="9" />
+                  <test-case name="Test.JSONTests.typeTest" executed="True" result="Success" success="True" time="0.000" asserts="12" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
